@@ -1,66 +1,115 @@
 html {
+  font-family: ' Inter ', sans-serif;
+  line-height: 1.6;
   font-size: 62.5%;
 }
 
-body {
-  font-family: ' Inter ', sans-serif;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-p {
+.container__title,
+.card__title,
+.card-horizontal__description {
   margin: 0;
   padding: 0;
+  
+}
+
+#card__box--flameGradient,#wrapper__card-horizontal--flameGradient,#card__button--flameGradient {
+  background-image: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);;
+}
+
+#card__box--iceGradient,#wrapper__card-horizontal--iceGradient,#card__button--iceGradient {
+  background-image: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+}
+
+#card__box--windGradient,#wrapper__card-horizontal--windGradient,#card__button--windGradient {
+  background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
 .container {
   display: grid;
-  min-height: 90vh;
+  min-height: 90vh;            
   place-content: center;
 }
-
-.card {
-  border-radius: 0.7rem;
-  box-shadow: 0.3rem 0.3rem 1.5rem rgba(0, 0, 0, 0.15);
-  min-width: 25rem;
+.container__title {
+  font-size: 3.0rem;
+  color: #c30052;
+}
+.container__wrapper {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 90vw;
+  
 }
 
-.card-horizontal {
+.wrapper__card {
   border-radius: 0.7rem;
   box-shadow: 0.3rem 0.3rem 1.5rem rgba(0, 0, 0, 0.15);
-  max-width: 32rem;
+  min-width: 25rem;  
+  text-align: center;
+  padding: 1.0rem;
+  
+  
 }
 
-.box {
+.card__box {
   width: 100%;
   min-height: 20rem;
   border-radius: 0.7rem;
   box-shadow: 0.3rem 0.3rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
-hr {
+.card__hr {
   border: 1px solid rgba(51, 51, 51, 0.062);
+  
 }
 
-button {
+.card__title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.card__button {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  
+}
+.button__button {
   border: none;
   border-radius: 0.3rem;
   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.444);
-  cursor: pointer;
-  display: block;
+  cursor: pointer;  
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1.0rem;
+  color: #fff;
+    
 }
 
-.wrapper {
-  padding: 1rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  max-width: 90vw;
+.wrapper__card-horizontal {
+  border-radius: 0.7rem;
+  box-shadow: 0.3rem 0.3rem 1.5rem rgba(0, 0, 0, 0.15);
+  max-width: 32rem;
+  padding: 10px;
+  margin-right: 1.0rem;
+  
 }
+
+.card-horizontal__title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.card-horizontal__description {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+
 
 @media (max-width: 768px) {
-  .wrapper {
+  .container__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
