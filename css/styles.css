@@ -48,8 +48,7 @@ html {
   min-width: 25rem;  
   text-align: center;
   padding: 1.0rem;
-  
-  
+    
 }
 
 .card__box {
@@ -82,7 +81,7 @@ html {
   cursor: pointer;  
   margin: 0;
   font-size: 1.5rem;
-  padding: 1.0rem;
+  padding: 1.0rem 2.0rem;
   color: #fff;
     
 }
@@ -105,8 +104,6 @@ html {
   font-size: 1.3rem;
   color: #fff;
 }
-
-
 
 @media (max-width: 768px) {
   .container__wrapper {
